@@ -1,30 +1,91 @@
-body {
-    font-family: Arial, sans-serif;
+/* Réinitialisation et styles de base */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Header */
 header {
+    background-color: #4CAF50; /* Vert pour attirer l'attention */
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+header .btn {
     background-color: #333;
     color: white;
-    padding: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Transition fluide */
+}
+
+header .btn:hover {
+    background-color: #555;
+}
+
+/* Container principal */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* Sections */
+section {
+    padding: 40px 0;
     text-align: center;
 }
 
-nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
-section {
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
+section ul {
+    list-style-type: none;
+    margin-bottom: 20px;
 }
 
+section ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.screenshots img {
+    width: 48%;
+    margin: 10px 1%;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, transform 0.3s ease; /* Ajout de transitions */
+}
+
+.screenshots img:hover {
+    border-color: #4CAF50;
+    transform: scale(1.05); /* Agrandir légèrement l'image au survol */
+}
+
+/* Projet section */
 .projet {
     background-color: white;
     padding: 15px;
@@ -37,11 +98,66 @@ section {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
+    transition: transform 0.3s ease;
 }
 
+.projet img:hover {
+    transform: scale(1.05); /* Effet au survol des images */
+}
+
+/* À propos de moi */
+#about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+/* Contact */
+#contact p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Footer */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Responsivité (pour les petits écrans) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+
+    section ul li {
+        font-size: 1.1em;
+    }
+
+    .screenshots img {
+        width: 100%; /* Images prennent toute la largeur sur petits écrans */
+        margin: 10px 0;
+    }
+
+    .container {
+        width: 95%;
+        padding: 20px 0;
+    }
+}
+
+/* Ajout d'une police Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif; /* Utilisation de la police Roboto */
 }
