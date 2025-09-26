@@ -28,6 +28,26 @@ header .links a {
     border-radius: 5px;
 }
 
+
+.screenshots {
+    display: flex;              
+    justify-content: center;   
+    gap: 15px;               
+    margin-top: 20px;
+}
+
+.screenshots img {
+    width: 200px;              
+    height: auto;               
+    border-radius: 5px;         
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+    transition: transform 0.3s;
+}
+
+.screenshots img:hover {
+    transform: scale(1.05);
+}
+
 section {
     padding: 40px 20px;
     max-width: 900px;
