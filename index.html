@@ -1,96 +1,85 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Zinsou Constant</title>
+    <title>Portfolio - Ton Nom</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Section d'accueil -->
-    <header id="accueil">
-        <div class="container">
-            <h1>Portfolio de Zinsou Constant</h1>
-            <p>Étudiant en L2 Informatique à l'Université Lyon 1 Claude Bernard</p>
-            <p>Voici mes projets réalisés avec diverses technologies : C++, Python, SQL, PHP</p>
-            <a href="#projet" class="btn">Voir le projet d'éditeur d'images</a>
+    <!-- Header -->
+    <header>
+        <h1> Zinsou Constant AGBOYINOU</h1>
+        <p>Étudiant en L3 Informatique - Université Lyon 1</p>
+        <p>Recherche stage en développement logiciel et web ou en Analyse de données ou en  IA</p>
+        <div class="links">
+            <a href="cv.pdf" target="_blank">📄 Télécharger mon CV</a>
+            <a href="https://www.linkedin.com/in/zinsou-constant-agboyinou-788384254/" target="_blank">🔗 LinkedIn</a>
+            <a href="https://github.com/" target="_blank">💻 GitHub</a>
         </div>
     </header>
 
+    <!-- À propos -->
+    <section id="about">
+        <h2>À propos</h2>
+        <p>Passionné par l’informatique ,le développement logiciel et l'intelligence artifficielle, je maîtrise plusieurs langages et outils, et je recherche une opportunité pour appliquer mes compétences en entreprise.</p>
+        <ul>
+            <li><strong>Langages :</strong> C, C++, Python , PHP, HTML/CSS</li>
+            <li><strong> Base des données  :</strong> MYSQL et PostgreSql </li>
+            <li><strong>Frameworks :</strong> Qt, Django , SDL2</li>
+            <li><strong>Outils :</strong> Git/GitLab , Ubuntu/Fedora, Qt Creator</li>
+        </ul>
+    </section>
+
     <!-- Section Projet éditeur d'images -->
-    <section id="projet">
+    <section id="project">
         <div class="container">
             <h2>Mon Projet : Éditeur d'Images</h2>
-            <p>Logiciel de traitement d'images avec des filtres, rognage intelligent, aperçu en double écran, etc.</p>
+            <p>Logiciel de traitement d'images avec des filtres, dessins avec crayons ,  etc.</p>
             <h3>Technologies utilisées :</h3>
             <ul>
-                <li>C++ avec Qt 6.8.2</li>
+                <li>C/C++ avec Qt 6.8.2</li>
                 <li>Ubuntu</li>
-                <li>Traitement d'image (flou, contraste, niveau de gris)</li>
+                <li>Traitement d'image (flou, contraste, niveau de gris et bien plus encore )</li>
             </ul>
             <h3>Captures d'écran :</h3>
             <div class="screenshots">
-                <img src="images/screenshot1.png" alt="Capture 1">
-                <img src="images/screenshot2.png" alt="Capture 2">
+                <img src="images/img1.jpeg" alt="Capture 1">
+                <img src="images/img2.jpeg" alt="Capture 2">
+                <img src="images/img3.jpeg" alt="Capture 3">
+
             </div>
             <a href="https://github.com/ZinsouConstant/portfolio" class="btn" target="_blank">Voir le code sur GitHub</a>
         </div>
     </section>
+    <section>
+        <div class="project">
+            <h3>Jeu Web (HTML/CSS)</h3>
+            <p>Jeu interactif uniquement en HTML/CSS, design responsive et animations CSS.</p>
+            <p><strong>Technologies :</strong> HTML5, CSS3</p>
+            <a href="https://github.com/" target="_blank">Voir sur GitHub</a>
+        </div>
 
-    <!-- Section Python -->
-    <section id="python">
-        <div class="container">
-            <h2>Projets Python</h2>
-            <p>Voici quelques projets réalisés avec Python, notamment en automatisation et analyse de données.</p>
-            <ul>
-                <li><strong>Application de traitement d'images</strong> : Analyse d'images et génération de rapports.</li>
-                <li><strong>Scraping Web</strong> : Automatisation de l'extraction de données de sites web avec BeautifulSoup.</li>
-            </ul>
-            <a href="https://github.com/ZinsouConstant/python-projects" class="btn" target="_blank">Voir le code Python sur GitHub</a>
+        <div class="project">
+            <h3>Projet SDL2 : Visualisation d’image</h3>
+            <p>Application en C++ avec SDL2 permettant de zoomer/dézoomer une image avec gestion du clavier.</p>
+            <p><strong>Technologies :</strong> C++, SDL2</p>
+            <a href="https://github.com/" target="_blank">Voir sur GitHub</a>
         </div>
     </section>
 
-    <!-- Section SQL -->
-    <section id="sql">
-        <div class="container">
-            <h2>Base de données et SQL</h2>
-            <p>Projets où j'ai utilisé SQL pour la gestion de bases de données relationnelles :</p>
-            <ul>
-                <li><strong>Gestion d'un système de bibliothèque</strong> : Création de la base de données et des requêtes SQL.</li>
-                <li><strong>API de gestion des utilisateurs</strong> : Utilisation de SQL pour interroger et gérer les données utilisateurs.</li>
-            </ul>
-            <a href="https://github.com/ZinsouConstant/sql-projects" class="btn" target="_blank">Voir le code SQL sur GitHub</a>
-        </div>
-    </section>
-
-    <!-- Section PHP -->
-    <section id="php">
-        <div class="container">
-            <h2>Projets PHP</h2>
-            <p>Voici des projets réalisés avec PHP, comme des applications web dynamiques et des systèmes de gestion de contenu :</p>
-            <ul>
-                <li><strong>Application Web E-commerce</strong> : Gestion des produits et commandes en PHP.</li>
-                <li><strong>CMS simple</strong> : Développement d'un système de gestion de contenu en PHP.</li>
-            </ul>
-            <a href="https://github.com/ZinsouConstant/php-projects" class="btn" target="_blank">Voir le code PHP sur GitHub</a>
-        </div>
-    </section>
-
-
+    <!-- Contact -->
     <section id="contact">
         <h2>Contact</h2>
-        <p> Email : <a href="mailto:zinsouconstanta@gmail.com">zinsouconstanta@gmail.com</a></p>
-        <p><a href="cv.pdf" target="_blank">Télécharger mon CV</a></p>
-        <p><a href="https://github.com/tonpseudo">Mon GitHub</a></p>
+        <p>📧 Email : <a href="mailto:zinsouconstanta@gmail.com">zinsouconstanta@gmail.com</a></p>
+        <p>🔗 LinkedIn : <a href="https://www.linkedin.com/in/zinsou-constant-agboyinou-788384254/">Mon profil LinkedIn</a></p>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Zinsou Constant. Tous droits réservés.</p>
-        </div>
+        <p>© 2025 Zinsou Constant AGBOYINOU - Portfolio</p>
     </footer>
-
 </body>
 </html>
+
