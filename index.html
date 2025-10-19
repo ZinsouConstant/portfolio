@@ -1,85 +1,189 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Ton Nom</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zinsou Constant AGBOYINOU | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css" />
+ <!-- <style>
+    
+  </style>-->
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <h1> Zinsou Constant AGBOYINOU</h1>
-        <p>Étudiant en L3 Informatique - Université Lyon 1</p>
-        <p>Recherche stage en développement logiciel et web ou en Analyse de données ou en  IA</p>
-        <div class="links">
-            <a href="cv.pdf" target="_blank">📄 Télécharger mon CV</a>
-            <a href="https://www.linkedin.com/in/zinsou-constant-agboyinou-788384254/" target="_blank">🔗 LinkedIn</a>
-            <a href="https://github.com/ZinsouConstant/" target="_blank">💻 GitHub</a>
-        </div>
-    </header>
 
-    <!-- À propos -->
-    <section id="about">
-        <h2>À propos</h2>
-        <p>Passionné par l’informatique ,le développement logiciel et l'intelligence artifficielle, je maîtrise plusieurs langages et outils, et je recherche une opportunité pour appliquer mes compétences en entreprise.</p>
-        <ul>
-            <li><strong>Langages :</strong> C, C++, Python , PHP, HTML/CSS</li>
-            <li><strong> Base des données  :</strong> MYSQL et PostgreSql </li>
-            <li><strong>Frameworks :</strong> Qt, Django , SDL2</li>
-            <li><strong>Outils :</strong> Git/GitLab , Ubuntu/Fedora, Qt Creator</li>
+<!-- Navbar -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">ZC</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about"><i class="fas fa-user"></i> À propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience"><i class="fas fa-briefcase"></i> Expérience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education"><i class="fas fa-graduation-cap"></i> Formation</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects"><i class="fas fa-project-diagram"></i> Projets</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Section héro -->
+<section class="hero">
+  <div class="container d-flex flex-column flex-md-row align-items-center justify-content-center text-start gap-4">
+    <img src="../portfolio/static/images/photo_de_profil.jpeg" alt="Photo de Constant" class="rounded-circle border border-3 border-white shadow">
+    <div>
+      <h1>Zinsou Constant AGBOYINOU</h1>
+      <h3><i class="fas fa-code"></i> Étudiant en L3 Informatique - Université Lyon 1</h3>
+      <p>Passionné par le développement logiciel, web et l’intelligence artificielle. <br> Je recherche un stage de 3 mois minimum en développement Informatique(Logiciel , systèmes embarqués , IA ) ou en  Analyse de Données.</p>
+      <div class="mt-3">
+        <a href="../portfolio/static/fichiers/CV_CONSTANT.pdf" class="btn btn-main" target="_blank"><i class="fas fa-file-pdf"></i> Mon CV</a>
+        <a href="https://www.linkedin.com/in/zinsou-constant-agboyinou-788384254/" target="_blank" class="btn btn-outline-main"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/ZinsouConstant" target="_blank" class="btn btn-outline-main"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- À propos -->
+<section id="about" class="container py-5">
+  <h2 class="section-title"><i class="fas fa-id-card"></i> À propos de moi</h2>
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="bg-white rounded shadow-sm p-4">
+        <ul class="list-unstyled mb-0">
+          <li><i class="fas fa-home me-2"></i> Réside à Lyon, France</li>
+          <li><i class="fas fa-graduation-cap me-2"></i> Licence 3 Informatique - Université Lyon 1</li>
+          <li><i class="fas fa-laptop-code me-2"></i> Passion : développement et IA</li>
         </ul>
-    </section>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="bg-white rounded shadow-sm p-4">
+        <h5><i class="fas fa-lightbulb me-2"></i> Compétences principales</h5>
+        <ul>
+          <li><strong>Langages :</strong> C, C++, Python, PHP, HTML/CSS</li>
+          <li><strong>Bases de données :</strong> MySQL, PostgreSQL , SQL , UML</li>
+          <li><strong>Frameworks :</strong> Qt, Flask , Alembic , SDL2</li>
+          <li><strong>Outils :</strong> GitHub/GitLab, Linux ,  Ubuntu, VScode , Qt Creator et Réseaux</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Section Projet éditeur d'images -->
-    <section id="project">
-        <div class="container">
-            <h2>Mon Projet : Éditeur d'Images</h2>
-            <p>Logiciel de traitement d'images avec des filtres, dessins avec crayons ,  etc.</p>
-            <h3>Technologies utilisées :</h3>
-            <ul>
-                <li>C/C++ avec Qt 6.8.2</li>
-                <li>Ubuntu</li>
-                <li>Traitement d'image (flou, contraste, niveau de gris et bien plus encore )</li>
-            </ul>
-            <h3>Captures d'écran :</h3>
-            <div class="screenshots">
-                <img src="images/img1.jpeg" alt="Capture 1">
-                <img src="images/img2.jpeg" alt="Capture 2">
-                <img src="images/img3.jpeg" alt="Capture 3">
+<!-- Expérience -->
+<section id="experience" class="container py-5">
+  <h2 class="section-title"><i class="fas fa-briefcase"></i> Expérience</h2>
 
-            </div>
-            <a href="https://github.com/ZinsouConstant/portfolio" class="btn" target="_blank">Voir le code sur GitHub</a>
-        </div>
-    </section>
-    <section>
-        <div class="project">
-            <h3>Jeu Web (HTML/CSS)</h3>
-            <p>Jeu interactif uniquement en HTML/CSS, design responsive et animations CSS.</p>
-            <p><strong>Technologies :</strong> HTML5, CSS3</p>
-            <a href="https://github.com/" target="_blank">Voir sur GitHub</a>
-        </div>
+  <div class="experience-card">
+    <h5><i class="fas fa-laptop-code"></i>Projet Développement Logiciel - Université Lyon1</h5>
+    <p class="mb-1">févr. 2025 - mai 2025 | Lyon, France</p>
+    <ul>
+      <li>Développement d’un logiciel de traitement d’images avec Qt en C/C++.</li>
+      <li>Implémentation de filtres : flou, contraste, luminosité, niveau de gris et bien plus encore .</li>
+    </ul>
+    <p><strong>Compétences :</strong> C/C++, Qt, Traitement d’images, Git/GitLab</p>
+  </div> 
 
-        <div class="project">
-            <h3>Projet SDL2 : Visualisation d’image</h3>
-            <p>Application en C++ avec SDL2 permettant de zoomer/dézoomer une image avec gestion du clavier.</p>
-            <p><strong>Technologies :</strong> C++, SDL2</p>
-            <a href="https://github.com/" target="_blank">Voir sur GitHub</a>
-        </div>
-    </section>
+  <div class="experience-card">
+    <h5><i class="fas fa-database"></i> Projet Base de Données – Université Lyon 1</h5>
+    <p class="mb-1">jan. 2024 - mai. 2025 | Lyon, France</p>
+    <ul>
+      <li>Conception et implémentation d’une base de données sous MySQL.</li>
+      <li>Requêtes SQL, MCD/MLD, import/export de données.</li>
+    </ul>
+    <p><strong>Compétences :</strong> MySQL, PostgreSQL , SQL, Modélisation, Analyse</p>
+  </div>
 
-    <!-- Contact -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p style="color:green;">📧 Email : <a href="mailto:zinsouconstanta@gmail.com">zinsouconstanta@gmail.com</a></p>
-        <p style="color:green;">🔗 LinkedIn : <a href="https://www.linkedin.com/in/zinsou-constant-agboyinou-788384254/">Mon profil LinkedIn</a></p>
-    </section>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Zinsou Constant AGBOYINOU - Portfolio</p>
-    </footer>
+<!-- Formation -->
+<section id="education" class="container py-5">
+  <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Formation</h2>
+
+  <div class="experience-card bg-light text-dark">
+    <h5><i class="fas fa-university"></i> Université Claude Bernard Lyon 1</h5>
+    <p class="mb-1">Licence Informatique – sept. 2023 à juil. 2026</p>
+    <p>Spécialisation en Programmation logiciel, algorithmique structures de données et Réseaux.</p>
+    <p><strong>Compétences :</strong> C, C++, Python, PHP, SDL2, UML ,HTML , CSS , MySQL , PostgreSQL , SQL, Flask,  Qt et Réseaux</p>
+  </div>
+
+  <div class="experience-card bg-light text-dark">
+    <h5><i class="fas fa-university"></i> Université d’Abomey-Calavi</h5>
+    <p class="mb-1">Licence en Physique Chimie 2018 à 2022</p>
+    <p><strong>Compétences :</strong> Mécanique Générale , Physique Quantique , Physque Ondulatoire , Chimie Organique et Chimie Minérale , Programmation , ...</p>
+  </div>
+</section>
+
+<!-- Projets -->
+<section id="projects" class="container py-5">
+  <h2 class="section-title"><i class="fas fa-project-diagram"></i> Projets</h2>
+
+  <!-- 🚧 Projet en cours -->
+  <div class="experience-card bg-secondary bg-gradient">
+    <h5><i class="fas fa-server"></i> API REST de gestion des notes universitaires <span class="encours">🚧 En cours</span></h5>
+    <p>Développement d’une API REST complète en Python (FastAPI) pour la gestion universitaire : authentification JWT, rôles (admin/enseignant/étudiant), calcul automatique des moyennes et génération de bulletins PDF.</p>
+    <p><strong>Technologies :</strong> FastAPI, Python, JWT, PostgreSQL/MySQL, PDF (reportlab)</p>
+    <div class="mt-2">
+      <a href="#" class="btn btn-outline-light disabled"><i class="fab fa-github"></i> Bientôt disponible</a>
+    </div>
+  </div>
+
+  <div class="experience-card">
+    <h5><i class="fas fa-image"></i> Logiciel Éditeur d'Images</h5>
+    <p>Logiciel de traitement d'images avec Qt : filtres (flou, contraste, niveaux de gris), dessin, zoom, rognage, etc.</p>
+    <p><strong>Technologies :</strong> C++, Qt 6.8.2, UML , Ubuntu</p>
+    <img src="../portfolio/static/images/img1.jpeg" alt="image_projet" class="img-fluid rounded shadow-sm mb-2">
+    <img src="../portfolio/static/images/img2.jpeg" alt="image_projet" class="img-fluid rounded shadow-sm mb-2">
+    <img src="../portfolio/static/images/img3.jpeg" alt="image_projet" class="img-fluid rounded shadow-sm mb-2">
+    <div class="mt-2">
+      <a href="https://github.com/ZinsouConstant/portfolio" target="_blank" class="btn btn-outline-light"><i class="fab fa-github"></i> Voir le code</a>
+    </div>
+  </div>
+
+  <div class="experience-card">
+    <h5><i class="fas fa-gamepad"></i> Jeu Web (Python , PostgreSQL , HTML/CSS)</h5>
+    <p>Jeu interactif 100% HTML/CSS avec animations et design responsive.</p>
+    <p><strong>Technologies :</strong> HTML5, CSS3</p>
+    <a href="https://github.com/ZinsouConstant" target="_blank" class="btn btn-outline-light"><i class="fab fa-github"></i> Voir le code</a>
+  </div>
+
+  <div class="experience-card">
+    <h5><i class="fas fa-desktop"></i> Visualisation d’images (SDL2)</h5>
+    <p>Application C/C++ permettant de zoomer/dézoomer une image avec gestion du clavier et affichage SDL2.</p>
+    <p><strong>Technologies :</strong> C/C++, UML , SDL2</p>
+    <a href="https://github.com/ZinsouConstant/" target="_blank" class="btn btn-outline-light"><i class="fab fa-github"></i> Voir le code</a>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="container py-5">
+  <h2 class="section-title"><i class="fas fa-envelope"></i> Contact</h2>
+  <form class="row g-3" action="#" method="post">
+    <div class="col-md-6">
+      <label for="name" class="form-label">Nom</label>
+      <input type="text" class="form-control" id="name" placeholder="Votre nom" required>
+    </div>
+    <div class="col-md-6">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" placeholder="Votre email" required>
+    </div>
+    <div class="col-12">
+      <label for="message" class="form-label">Message</label>
+      <textarea class="form-control" id="message" rows="4" placeholder="Votre message..." required></textarea>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-main">Envoyer</button>
+    </div>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 Zinsou Constant AGBOYINOU
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
