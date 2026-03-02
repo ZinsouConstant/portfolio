@@ -4,7 +4,17 @@ import smtplib
 from email.message import EmailMessage
 import os
 
+from fastapi.middleware.cors import CORSMiddleware
+
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["https://portfolio-stp5.onrender.com"],  # ton frontend
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 class ContactForm(BaseModel):
     name: str
@@ -32,4 +42,9 @@ def send_contact(form: ContactForm):
         smtp.login(os.getenv("EMAIL_USER"), os.getenv("EMAIL_PASS"))
         smtp.send_message(msg)
 
-    return {"status": "Message sent successfully"}
+    return {"status": "Message envoyé avec succès"}
+
+
+@app.get("/")
+def home():
+    return {"message": "Portfolio Contact API is running"}

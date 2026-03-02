@@ -1,0 +1,176 @@
+:root {
+  --main-color: #0066cc;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  padding-top: 60px;
+  line-height: 1.6;
+}
+
+/* Barre de navigation */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+.navbar-brand, .nav-link {
+  color: var(--main-color) !important;
+  font-weight: 600;
+}
+
+/* Section héro */
+.hero {
+  background: linear-gradient(135deg, #f9f9f9, #e3e3e3);
+  padding: 80px 20px;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+}
+.hero img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+}
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.hero h3 {
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+/* Boutons */
+.btn-main {
+  background-color: var(--main-color);
+  color: white;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+.btn-main:hover {
+  background-color: #004d99;
+}
+.btn-outline-main {
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+.btn-outline-main:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+/* Titres de section */
+.section-title {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* Cartes d’expérience et projets */
+.experience-card {
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.experience-card h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* Label "En cours" */
+.encours {
+  background-color: #ffd166;
+  color: #333;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+/* Pied de page */
+footer {
+  background-color: #efefef;
+  padding: 20px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* Images du projet Éditeur d'Images */
+.experience-card img {
+  width: 200px;
+  height: auto;
+  margin: 5px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.experience-card img:hover {
+  transform: scale(1.05);
+}
+
+/* ---- FORMULAIRE DE CONTACT ---- */
+.formulaire-contact {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 30px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.formulaire-contact label {
+  font-weight: 600;
+  color: #333;
+}
+
+.formulaire-contact input,
+.formulaire-contact textarea {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  transition: 0.2s;
+}
+
+.formulaire-contact input:focus,
+.formulaire-contact textarea:focus {
+  border-color: var(--main-color);
+  outline: none;
+  box-shadow: 0 0 5px rgba(0,102,204,0.2);
+}
+
+.formulaire-contact button {
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 25px;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.formulaire-contact button:hover {
+  background-color: #004d99;
+  transform: scale(1.05);
+}
+
+.footer_bottom {
+  background-color: #efefef;
+  color: #031a31;
+  padding: 20px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
